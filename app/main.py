@@ -5,8 +5,8 @@ from fief_client.integrations.fastapi import FiefAuth
 
 fief = FiefAsync(
     "https://fief.knh.cloud",
-    "3wI6H-nVkVZLc2h0OJFl91zV_RoyGMfUqjYR-z3uA-M",
-    "lUVKMrNdudjh3XCSnUeaJaJy3pH-PacGIcC8yUamL4U",
+    "ArGeq7v90-4rB8SzT3qMZN2ysu4JZzBYLZn8Pw02jlU",
+    "jt_lw8wUwaKY2Yx8rO42G1aV4pCsyc67Ucu16nf6Qd0",
 )
 
 scheme = OAuth2AuthorizationCodeBearer(

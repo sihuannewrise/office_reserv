@@ -1,0 +1,14 @@
+---
+services:
+  fief-client:
+    container_name: fief-client
+    build:
+      context: .
+      args:
+        - --no-cache
+    networks:
+      - traefik-public
+
+networks:
+  traefik-public:
+    external: true
