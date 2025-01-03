@@ -1,3 +1,5 @@
+# scp compose.yml sihuan@192.168.2.91:~/auth
+# docker compose up -d --build
 ---
 services:
   fief-client:
@@ -6,6 +8,8 @@ services:
       context: .
       args:
         - --no-cache
+    volumes:
+      - /share/infra/cert/docker:/etc/docker/certs.d
     networks:
       - traefik-public
 
