@@ -1,5 +1,6 @@
 # scp compose.yml sihuan@192.168.2.91:~/auth
 # docker compose up -d --build
+# docker run -d --name mycontainer -p 80:80 myimage
 ---
 services:
   fief-client:
