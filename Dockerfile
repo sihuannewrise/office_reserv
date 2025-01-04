@@ -14,6 +14,6 @@ WORKDIR /app
 COPY requirements.txt /app/
 RUN pip install -r requirements.txt --no-cache-dir
 
-COPY client.py /app/
+COPY main.py /app/
 
-CMD ["python", "client.py"]
+CMD ["fastapi", "run", "main.py", "--port", "80", "--proxy-headers"]
