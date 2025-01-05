@@ -16,4 +16,4 @@ RUN pip install -r requirements.txt --no-cache-dir
 
 COPY main.py /app/
 
-CMD ["fastapi", "run", "main.py", "--port", "80", "--proxy-headers"]
+CMD ["fastapi", "run", "main.py", "--port", "8001", "--proxy-headers"]

@@ -3,14 +3,14 @@
 # docker run -d --name mycontainer -p 80:80 myimage
 ---
 services:
-  fief-client:
-    container_name: fief-client
-    build:
-      context: .
-      args:
-        - --no-cache
+  fiefclient:
+    image: docker.io/library/fief-client:v1
+    restart: always
     volumes:
-      - /share/infra/cert/docker:/etc/docker/certs.d
+      - /etc/localtime:/etc/localtime:ro
+      # - /share/infra/cert/docker:/etc/docker/certs.d
+    ports:
+      - 8001:80
     networks:
       - traefik-public
 
