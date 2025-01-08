@@ -6,7 +6,7 @@ fief = Fief(
     "jt_lw8wUwaKY2Yx8rO42G1aV4pCsyc67Ucu16nf6Qd0",
 )
 
-redirect_url = "http://localhost:8000/callback"
+redirect_url = "https://knh.cloud/callback"
 
 auth_url = fief.auth_url(redirect_url, scope=["openid"])
 print(f"Open this URL in your browser: {auth_url}")
